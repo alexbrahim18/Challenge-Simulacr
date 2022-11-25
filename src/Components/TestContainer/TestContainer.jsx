@@ -21,10 +21,12 @@ const TestContainer =()=>{
     return(
         <div className="d-flex flex-column align-items-center body">
             <h2 className="m-3">{mayus(test.cliente)}</h2>
+            <h3>Test: Test de usabilidad de sitio web</h3>
+            <h4>Testeador 1</h4>
             
             <iframe  title="Video de muestra" className="m-3 col-md-6"  height="500" src={test.linkVideo}> </iframe>
             <div className="transcrip m-5"  dangerouslySetInnerHTML={{__html: test.transcripcion}}></div>
-            <p className="m-3 fs-3 align-self-start">Escenario: {test.escenario}</p>
+            <p className="m-3 fs-3 align-self-start fw-bold">Escenario: {test.escenario}</p>
              <Test test = {test.preguntas}></Test>
         </div>
     )
